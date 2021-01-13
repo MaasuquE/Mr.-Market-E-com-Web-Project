@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "sendgrid/sendgrid": "^7.9",
+        "facebook/graph-sdk": "^5.7"
+    }
+}
