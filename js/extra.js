@@ -210,7 +210,7 @@ function delete_cart(cart_id){
  function update_profile(uid){
      jQuery('.field_error').html('');
      var name=jQuery('#name').val();
-     var email=jQuery('#email').val();
+     var email=jQuery('#profile_email').val();
      var phn=jQuery('#phn').val();
      var old_pass =jQuery('#old_pass').val();
      var new_pass1=jQuery('#new_pass1').val();

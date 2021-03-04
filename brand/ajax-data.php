@@ -34,7 +34,7 @@
                     <td>'.$row['sub_categories'].'</td>
                     <td>'.$row['qty'].'</td>
                     <td>'.$row['price'].'</td>
-                    <td>'.$row['discount'].'</td>
+                    <td>'.$row['discount'].'%</td>
                     <td><img src="../admin/upload/'.$row['img'].'" alt=""></td>
                     <td class="sts_td">'; if($row['pdt_sts']==1){
                         $html.='<a href="" onclick="brand_sts('.$row['product_id'].',1)"><i class="fas fa-toggle-on"></i></a>';

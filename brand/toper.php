@@ -71,7 +71,7 @@
             <li class="header-menu">
               <span>General</span>
             </li>
-            <li class="sidebar-dropdown">
+            <li class="sidebar-dropdown active">
               <a href="index.php">
                 <i class="fas fa-tachometer-alt"></i>
                 <span>Dashboard</span>

@@ -54,9 +54,6 @@ if(!isset($_SESSION['USER_LOGIN']) && !isset($_SESSION['del_boy']) ){
                                 <li class="nav-item active">
                                     <a class="active nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                                 </li>
-                                <li class="nav-item no_ac">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                                </li>
                             </ul>
                         </div>
                     </div>

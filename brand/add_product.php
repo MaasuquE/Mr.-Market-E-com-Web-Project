@@ -35,9 +35,9 @@
               move_uploaded_file($file_tmp,$target);
               
             }
-            else{
-              print_r($error);
-              die();
+            else{?>
+              <p style="color:white"><?php print_r($error); ?></p>
+             <?php die();
             }
           }
 

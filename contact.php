@@ -1,7 +1,6 @@
 <?php
     include "config.php";
-    include "toper.php"; 
-    
+    include "toper.php";
     $msg ="";
 
     $sql = "SELECT * FROM contact_us";
@@ -10,7 +9,7 @@
 
     if(isset($_POST['submit'])){
         
-        include "function.inc.php";
+        
         $name =get_string($conn,$_POST['name']);
         $email =get_string($conn,$_POST['email']);
         $mobile =get_string($conn,$_POST['mobile']);
@@ -135,7 +134,7 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
                         <div class="map-contacts--2">
-                            <div id="googleMap"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7237.289648299693!2d91.85571847302553!3d24.910093966878996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750553c8e9b00db%3A0xf0b75a56206b244!2zSmFsYWxhYmFkLCDgprjgpr_gprLgp4fgpp8!5e0!3m2!1sbn!2sbd!4v1613626435737!5m2!1sbn!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">

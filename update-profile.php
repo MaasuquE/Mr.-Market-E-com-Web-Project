@@ -74,9 +74,6 @@ if(!isset($_SESSION['USER_LOGIN'])){
                                 <li class="nav-item active">
                                     <a class="active nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                                 </li>
-                                <li class="nav-item no_ac">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -116,7 +113,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
                                                     <label>Email</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input type="email" id="email" value="<?php echo $row['email'];?>" placeholder="Enter email...." required/>
+                                                    <input type="email" id="profile_email" value="<?php echo $row['email'];?>" placeholder="Enter email...." required/>
                                                     <br><span class="field_error" id="email_error"></span>
                                                 </div>
                                             </div>
