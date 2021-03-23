@@ -8,7 +8,7 @@
             <div class="footer-inner bg-white">
                <div class="row">
                   <div class="col-sm-6 text-right">
-                     Designed by <a href="#">MaasuquE</a>
+                     Designed by <a href="#">Shafi, <?php echo date('Y'); ?></a>
                   </div>
                </div>
             </div>

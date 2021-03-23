@@ -257,22 +257,6 @@
                             </div>
                         </div>
                     </div>
-                    <?php if(isset($_SESSION['USER_LOGIN'])){
-                        $user_id=$_SESSION['user_id'];
-                        $res_uc= mysqli_query($conn,"SELECT * FROM user WHERE id={$user_id}");
-                        if(mysqli_num_rows($res_uc)>0){
-                            while($row_uc=mysqli_fetch_assoc($res_uc)){
-                                if($row_uc['user_coin']>100){
-                                    $coin=number_format(($row_uc['user_coin']/1000),1)."k";
-                                }else{
-                                    $coin=$row_uc['user_coin'];
-                                }
-                            }
-                            
-                            echo '<div class="nav_coin"><a href="coin_product.php"><span class="htc_coin"><i class="fas fa-coins"></i>'.$coin.'</span></a></div>';
-                        }
-                    }
-                    ?>
                     <div class="mobile-menu-area"></div>
                 </div>
             </div>

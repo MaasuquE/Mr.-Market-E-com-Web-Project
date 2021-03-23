@@ -66,7 +66,7 @@
                                        <td><?php echo $i++; ?></td>
                                        <td><?php echo $row['del_boy_id']; ?></td>
                                        <td><?php echo $row['boy_name']; ?></td>
-                                       <td><?php echo $row['email']; ?></td>
+                                       <td><?php echo $row['del_boy_email']; ?></td>
                                        <td><?php echo $row['mobile']; ?></td>
                                        <td><?php echo $row['city']; ?></td>
                                        <td><?php echo $row['address']; ?></td>

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2021 at 04:52 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.1.32
+-- Generation Time: Mar 23, 2021 at 02:07 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -97,28 +96,9 @@ CREATE TABLE `buy` (
 --
 
 INSERT INTO `buy` (`buy_id`, `product_id`, `date`, `user_id`, `sell_qty`, `discount`, `chk_id`) VALUES
-(146, 97, '2020-12-28 09:31:45', 7, 7, 30, 143),
-(147, 91, '2020-12-28 09:32:49', 7, 3, 30, 144),
-(148, 93, '2020-12-28 09:34:50', 7, 4, 0, 145),
-(149, 95, '2020-12-28 09:35:22', 7, 4, 0, 146),
-(150, 88, '2020-12-28 09:36:11', 7, 4, 0, 147),
-(151, 97, '2020-12-28 11:23:20', 7, 5, 30, 148),
-(152, 88, '2020-12-28 11:24:48', 7, 3, 0, 149),
-(153, 86, '2020-12-30 06:28:08', 17, 5, 0, 150),
-(154, 99, '2020-12-31 08:05:58', 17, 9, 30, 151),
-(155, 99, '2020-12-31 09:59:23', 17, 1, 0, 152),
-(156, 99, '2020-12-31 10:06:15', 17, 1, 30, 153),
-(157, 95, '2020-12-31 10:13:47', 17, 3, 20, 154),
-(158, 88, '2021-01-01 02:27:34', 17, 5, 0, 155),
-(159, 88, '2021-01-01 02:27:34', 17, 3, 0, 155),
-(160, 99, '2021-01-01 02:27:34', 17, 12, 0, 155),
-(161, 99, '2021-01-01 02:52:24', 17, 1, 0, 160),
-(162, 99, '2021-01-01 02:58:57', 17, 2, 0, 162),
-(163, 99, '2021-01-01 03:00:09', 17, 5, 0, 163),
-(164, 99, '2021-01-01 03:22:33', 17, 2, 0, 164),
-(165, 99, '2021-01-01 03:28:07', 17, 1, 0, 165),
-(166, 97, '2021-01-01 03:33:26', 17, 5, 0, 166),
-(167, 78, '2021-01-01 03:33:26', 17, 5, 0, 166);
+(178, 99, '2021-03-23 06:50:02', 17, 4, 0, 176),
+(179, 99, '2021-03-23 06:51:22', 17, 6, 0, 177),
+(180, 89, '2021-03-23 07:01:37', 17, 3, 30, 178);
 
 -- --------------------------------------------------------
 
@@ -186,31 +166,9 @@ CREATE TABLE `checkout` (
 --
 
 INSERT INTO `checkout` (`checkout_id`, `name`, `email`, `phn`, `user_id`, `date`, `address`, `payment`, `order_status`, `del_boy_id`, `amount_type`) VALUES
-(129, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-24 10:45:45', 'Subid bazar,undefined,Sylhet - 3100', 'online', 2, 0, ''),
-(130, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-24 04:12:59', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 0, ''),
-(131, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-25 06:17:06', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 0, ''),
-(132, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-25 06:20:13', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 0, ''),
-(133, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 03:27:26', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 1, ''),
-(138, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 08:08:38', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 3, ''),
-(141, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 08:09:20', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 5, ''),
-(143, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 09:31:45', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(144, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 09:32:49', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(145, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 09:34:50', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(146, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 09:35:22', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(147, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 09:36:11', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(148, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 11:23:20', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(149, 'Dhaka', 'samsu32@gmail.com', '01234555', 7, '2020-12-28 11:24:48', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(151, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2020-12-31 08:05:58', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(152, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2020-12-31 09:59:23', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(153, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2020-12-31 10:06:15', 'Subid bazar,undefined,Sylhet - 3100', 'online', 2, 2, 'checkout'),
-(154, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2020-12-31 10:13:47', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(155, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 02:27:34', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(160, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 02:52:24', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(162, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 02:58:57', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(163, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 03:00:09', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'checkout'),
-(164, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 03:22:33', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(165, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 03:28:07', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin'),
-(166, 'Dhaka', 'samsu32@gmail.com', '01234555', 17, '2021-01-01 03:33:26', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 2, 'coin');
+(176, 'Masuk  Mia', 'samsu32@gmail.com', '01234555', 17, '2021-03-23 06:50:02', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 18, 'checkout'),
+(177, 'Mia Hossen', 'samsu3200@gmail.com', '01234555', 17, '2021-03-23 06:51:22', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 18, 'checkout'),
+(178, 'Taka', 'samsu32@gmail.com', '01234555', 17, '2021-03-23 07:01:37', 'Subid bazar,undefined,Sylhet - 3100', 'cash', 1, 19, 'checkout');
 
 -- --------------------------------------------------------
 
@@ -268,7 +226,7 @@ INSERT INTO `coupon` (`coupon_id`, `coupon`, `discount`, `status`, `uses_time`) 
 CREATE TABLE `delivery_boy` (
   `del_boy_id` int(11) NOT NULL,
   `boy_name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
+  `del_boy_email` varchar(100) NOT NULL,
   `mobile` mediumint(9) NOT NULL,
   `age` int(11) NOT NULL,
   `gender` varchar(20) NOT NULL,
@@ -284,10 +242,9 @@ CREATE TABLE `delivery_boy` (
 -- Dumping data for table `delivery_boy`
 --
 
-INSERT INTO `delivery_boy` (`del_boy_id`, `boy_name`, `email`, `mobile`, `age`, `gender`, `city`, `address`, `password`, `img`, `boy_added_on`, `del_boy_sts`) VALUES
-(2, 'Dhaka', 'samsu32@gmail.com', 8388607, 23423, 'male', 'Sylhet', 'Subid bazar', '12345', 'pp.jpg', '2020-12-25 03:19:10pm', 1),
-(9, 'Dhaka', 'samsu12332@gmail.com', 1234555, 213424, 'male', 'Sylhet', 'Subid bazar', '12323', 'pp.jpg', '2021-01-01 09:39:07pm', 0),
-(10, 'Ridoy', 'ridoy@gmail.com', 8388607, 40, 'others', 'Sylhet', 'Subid bazar', '123456', 'pp.jpg', '2021-01-01 09:40:38pm', 0);
+INSERT INTO `delivery_boy` (`del_boy_id`, `boy_name`, `del_boy_email`, `mobile`, `age`, `gender`, `city`, `address`, `password`, `img`, `boy_added_on`, `del_boy_sts`) VALUES
+(18, 'Shameem', 'shameem2@gmail.com', 8388607, 20, 'male', 'Sylhet', 'Subid bazar', '123456', 'pp.jpg', '2021-03-23 06:33:02am', 0),
+(19, 'Masuk', 'mia@gmail.com', 8388607, 20, 'male', 'Sylhet', 'Subid bazar', '12345', 'pp.jpg', '2021-03-23 07:00:42am', 0);
 
 -- --------------------------------------------------------
 
@@ -324,22 +281,18 @@ INSERT INTO `product` (`product_id`, `category`, `sub_cat_id`, `product_name`, `
 (81, 34, 0, 'Gucci Washed T-shirt', 0, 1000, 1200, 0, 0, '', 'T-shirt', '1609151448-Gucci Washed T-shirt.jpg', 1, 40),
 (82, 20, 23, 'One Plus 8 pro', 0, 10, 80000, 0, 0, '', 'Without notch best full screen display', '1609152024-One Plus 8 pro.jpg', 1, 41),
 (84, 20, 23, 'Redmi K20 Pro', 0, 10, 30000, 0, 0, '', 'Redmi best creation best for gaming.', '1609152183-Redmi K20 Pro.jpg', 1, 41),
-(85, 20, 23, 'Samsung Note 20', 0, 10, 70000, 0, 0, '', 'Full display phone', '1609152376-Samsung Note 20.jpg', 1, 41),
+(85, 20, 23, 'Samsung Note 20', 0, 3, 70000, 0, 0, '', 'Full display phone', '1609152376-Samsung Note 20.jpg', 1, 41),
 (86, 20, 23, 'iphone 12', 0, 1, 150000, 50, 0, '', 'Brand new box mobile', '1609152445-iphone 12.jpg', 1, 41),
 (87, 20, 20, 'Full Hd 27\" IPS  LCD Monitor', 0, 20, 22500, 0, 0, '', 'Full Hd screen and best seller', '1609152775-Full Hd  Lcd Monitor.jpg', 1, 42),
-(88, 20, 20, 'AMD Ryzen 7 3700X Gaming PC', 0, 100, 170000, 100, 0, '', 'Best gaming pc ever in low budget', '1609152885-AMD Ryzen 7 3700X Gaming PC.jpg', 1, 42),
-(89, 20, 20, 'AMD Ryzen 7 3700X Gaming PC', 0, 10, 15000, 0, 2, '', 'Best gaming mouse', '1609153034-Logitech Gaming Mouse G502 HERO.jpg', 1, 42),
+(88, 20, 20, 'AMD Ryzen 7 3700X Gaming PC', 0, 91, 170000, 100, 0, '', 'Best gaming pc ever in low budget', '1609152885-AMD Ryzen 7 3700X Gaming PC.jpg', 1, 42),
+(89, 20, 20, 'AMD Ryzen 7 3700X Gaming PC', 0, 7, 15000, 0, 2, '', 'Best gaming mouse', '1609153034-Logitech Gaming Mouse G502 HERO.jpg', 1, 42),
 (90, 20, 20, 'Logitec K480 Bluetooth Multidevice keyboard', 0, 20, 20000, 0, 0, '', 'Flexible keyboard and useable anywhere', '1609153237-Logitec K480 Bluetoth Multidevice keyboard.jpg', 1, 42),
-(91, 34, 0, 'Mens Formal Shirt', 0, 97, 1200, 0, 0, '', 'Cotton Men Formal Shirt', '1609153416-Mens Formal Shirt.jpg', 1, 39),
-(92, 34, 0, 'Mens Cargo Pant', 0, 100, 2000, 0, 0, '', 'Imported pant', '1609153519-Mens Cargo Pant.jpg', 1, 39),
-(93, 34, 0, 'Infinity Teenage Tops', 0, 96, 1500, 0, 0, '', 'Grls loved this tops very much', '1609153700-Infinity Teenage Tops.jpg', 1, 39),
-(94, 34, 0, 'Infinity Teen Pant', 0, 100, 1000, 0, 0, '', 'Teen loved pant', '1609153868-download (1).jpg', 1, 39),
-(95, 19, 27, 'Bed', 0, 2, 35000, 0, 0, '', 'Nicely decorated wooden bed', '1609156310-bed.jpg', 1, 43),
+(95, 19, 27, 'Bed', 0, 0, 35000, 0, 0, '', 'Nicely decorated wooden bed', '1609156310-bed.jpg', 1, 43),
 (96, 19, 14, 'Single-seat Sofa', 0, 10, 40000, 0, 0, '', 'Soft Foamed sofa', '1609169179-p3.jpg', 1, 43),
-(97, 19, 13, 'F chair', 0, 95, 500, 5000, 5, '', 'This is F chair.', '1609169147-p7.jpg', 1, 43),
-(98, 32, 11, 'No collar T-shirt', 0, 20, 300, 0, 30, '', 'This is t-shirt is so nice', '1609169321-t6-removebg-preview.png', 1, 39),
-(99, 32, 11, 'VIP T-shirt', 1000, 26, 10001, 50000, 12, '', 'adsadfsdaf', '1609333161-231c3d78fef32e545a023136ce6d9149.jpg', 1, 44),
-(100, 20, 23, 'rqewrwe', 0, 2342, 2342, 0, 234, '', 'sdfsa', '1609181128-AMD Ryzen 7 3700X Gaming PC.jpg', 1, 45);
+(97, 19, 13, 'F chair', 0, 92, 500, 5000, 5, '', 'This is F chair.', '1609169147-p7.jpg', 1, 43),
+(99, 32, 11, 'VIP T-shirt', 1000, 5, 10001, 50000, 12, '', 'adsadfsdaf', '1609333161-231c3d78fef32e545a023136ce6d9149.jpg', 1, 44),
+(100, 20, 23, 'rqewrwe', 0, 2342, 2342, 0, 234, '', 'sdfsa', '1609181128-AMD Ryzen 7 3700X Gaming PC.jpg', 1, 45),
+(105, 20, 23, '45646', 0, 5451, 544, 54, 40, '', 'fsadfsda', '1614883366-2.png', 1, 39);
 
 -- --------------------------------------------------------
 
@@ -378,7 +331,8 @@ INSERT INTO `product_comment` (`comment_id`, `product_id`, `comment`, `comment_d
 (45, 97, 'sadfsadfs', '2020-12-28 09:35:36pm', 7, 0, 0),
 (47, 98, 'dfgafdsf', '2021-01-01 02:13:29am', 17, 0, 0),
 (48, 98, 'sdfsdfds', '2021-01-01 02:13:32am', 17, 0, 0),
-(49, 99, 'sdfsfsdfsd', '2021-01-01 03:02:17am', 17, 0, 0);
+(49, 99, 'sdfsfsdfsd', '2021-01-01 03:02:17am', 17, 0, 0),
+(51, 89, 'fzdgsadfsdaf', '2021-03-23 07:02:48am', 17, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -412,13 +366,18 @@ INSERT INTO `product_rating` (`rating_id`, `product_id`, `1_star`, `2_star`, `3_
 (16, 75, 0, 0, 0, 1, 0, 4),
 (17, 86, 0, 0, 0, 2, 0, 4),
 (18, 77, 0, 0, 0, 3, 0, 4),
-(19, 95, 0, 0, 0, 3, 0, 4),
-(20, 97, 0, 0, 2, 1, 0, 3.33333),
+(19, 95, 0, 0, 0, 4, 0, 4),
+(20, 97, 0, 0, 2, 2, 0, 3.5),
 (21, 91, 0, 0, 0, 1, 0, 4),
 (22, 93, 0, 0, 0, 1, 0, 4),
-(23, 88, 0, 0, 0, 2, 2, 4.5),
-(24, 99, 0, 0, 0, 8, 1, 4.11111),
-(25, 78, 0, 0, 0, 1, 0, 4);
+(23, 88, 0, 0, 0, 2, 3, 4.6),
+(24, 99, 0, 0, 0, 11, 3, 4.21429),
+(25, 78, 0, 0, 0, 1, 0, 4),
+(26, 94, 0, 0, 0, 1, 0, 4),
+(27, 102, 0, 0, 0, 0, 1, 5),
+(28, 85, 0, 0, 0, 0, 1, 5),
+(29, 105, 0, 0, 0, 1, 0, 4),
+(30, 89, 0, 0, 0, 1, 0, 4);
 
 -- --------------------------------------------------------
 
@@ -501,7 +460,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`, `email`, `mobile`, `added_on`, `img`, `password`, `user_coin`) VALUES
 (7, 'MaasuquE', 'mdmaasuque@gmail.ocm', '01725110034', '27 Sep, 2020  09:46:01', 'Dining.png', '12345', 1300),
-(17, 'Happy', 'masukmia603@gmail.com', '017689608981', '23 Oct, 2020  09:06:45', '125979696_2412487728897636_7764827119394844222_o.jpg', '123456', 14975),
+(17, 'Happy', 'masukmia603@gmail.com', '017689608981', '23 Oct, 2020  09:06:45', '125979696_2412487728897636_7764827119394844222_o.jpg', '123456', 15075),
 (18, 'Dhaka', 'masuksdfsdf@gmail.com', '01725110034', '23 Oct, 2020  09:07:48', 'pp.jpg', '12345', 0),
 (19, 'Dhaka', 'masuksssdf@gmail.com', '01725110034', '23 Oct, 2020  09:11:23', 'pp.jpg', '12345', 0),
 (23, 'Happy', 'massdfukdsf@gmail.com', '01725110035', '24 Oct, 2020  09:49:01', 'pp.jpg', '12345', 0),
@@ -516,7 +475,13 @@ INSERT INTO `user` (`id`, `name`, `email`, `mobile`, `added_on`, `img`, `passwor
 (54, 'safasdf', 'samsu2028@gmail.com', '234242423', '03 Dec, 2020  06:55:27', 'wp1969900-kristen-stewart-2017-wallpapers.jpg', '123456', 0),
 (55, 'Dhaka', 'samsu32@gmail.com', '01234555', '01 Jan, 2021  09:21:30', 'pp.jpg', '12345', 0),
 (56, 'Dhaka', 'samsu324@gmail.com', '01234555', '01 Jan, 2021  09:22:28', 'pp.jpg', '12345', 0),
-(57, 'Ridoy', 'ridoy@gmail.com', '0172342342', '2020-12-24 10:20pm', 'pp.jpg', '12345', 0);
+(57, 'Ridoy', 'ridoy@gmail.com', '0172342342', '2020-12-24 10:20pm', 'pp.jpg', '12345', 0),
+(58, 'Samem', 'samsu32789@gmail.com', '01234555', '18 Feb, 2021  12:55:45', 'pp.jpg', '123456', 0),
+(59, 'Dhaka', 'samsu3278@gmail.com', '01234555', '18 Feb, 2021  09:29:04', 'pp.jpg', '12345', 0),
+(60, 'shamem', 'shamem@gmail.com', '01234555', '18 Feb, 2021  09:29:25', 'photo-1539789788310-592bbc54b91e.jpg', '12345', 0),
+(61, 'Dhakawerwer', 'samsu32@gmewrwe.com', '01234555', '03 Mar, 2021  10:42:00', 'pp.jpg', 'ewrwer', 0),
+(62, 'Dhaka', 'samsu32343@gmail.com', '01234555', '05 Mar, 2021  12:37:58', 'pp.jpg', '324e234', 0),
+(63, 'Dhaka', 'samsu32432@gmail.com', '01234555', '05 Mar, 2021  12:46:31', 'pp.jpg', '324234324', 0);
 
 -- --------------------------------------------------------
 
@@ -535,7 +500,8 @@ CREATE TABLE `visitor` (
 --
 
 INSERT INTO `visitor` (`visitor_id`, `ip_address`, `visiting_date`) VALUES
-(554, '::1', '2020-12-24 04:34:56pm');
+(554, '::1', '2020-12-24 04:34:56pm'),
+(555, '127.0.0.1', '2021-02-18 10:51:22am');
 
 -- --------------------------------------------------------
 
@@ -678,13 +644,13 @@ ALTER TABLE `brand`
 -- AUTO_INCREMENT for table `buy`
 --
 ALTER TABLE `buy`
-  MODIFY `buy_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
+  MODIFY `buy_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=181;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=268;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=286;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -696,7 +662,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `checkout`
 --
 ALTER TABLE `checkout`
-  MODIFY `checkout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
+  MODIFY `checkout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
 
 --
 -- AUTO_INCREMENT for table `contact_us`
@@ -708,25 +674,25 @@ ALTER TABLE `contact_us`
 -- AUTO_INCREMENT for table `delivery_boy`
 --
 ALTER TABLE `delivery_boy`
-  MODIFY `del_boy_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `del_boy_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT for table `product_comment`
 --
 ALTER TABLE `product_comment`
-  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `product_rating`
 --
 ALTER TABLE `product_rating`
-  MODIFY `rating_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `rating_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `slide_product`
@@ -744,19 +710,19 @@ ALTER TABLE `sub_category`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT for table `visitor`
 --
 ALTER TABLE `visitor`
-  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=555;
+  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=556;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `wishlist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `wishlist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

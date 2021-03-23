@@ -101,7 +101,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="copyright__inner">
-                                <p>©<a href="#">Md MaasuquE</a> 2020</p>
+                                <p>©<a href="#">Shafi </a> <?php echo date('Y'); ?></p>
                                 <a href="#"><img src="images/others/shape/paypol.png" alt="payment images"></a>
                             </div>
                         </div>

@@ -513,7 +513,7 @@ if($type=='del_boy_reg'){
     $pass=mysqli_real_escape_string($conn,$_POST['pass']);
     $gender=mysqli_real_escape_string($conn,$_POST['gender']);
     $date =date("Y-m-d h:i:sa");
-    $res=mysqli_query($conn,"SELECT * FROM delivery_boy WHERE email='{$email}' OR mobile='{$mobile}'");
+    $res=mysqli_query($conn,"SELECT * FROM delivery_boy WHERE del_boy_email='{$email}' OR mobile='{$mobile}'");
     if(mysqli_num_rows($res)>0){
         while($row=mysqli_fetch_assoc($res)){
             if($row['email']==$email){
@@ -526,7 +526,7 @@ if($type=='del_boy_reg'){
 
     }
     else{
-        $sql="INSERT INTO delivery_boy(boy_name,email,mobile,city,age,address,gender,password,img,boy_added_on) 
+        $sql="INSERT INTO delivery_boy(boy_name,del_boy_email,mobile,city,age,address,gender,password,img,boy_added_on) 
             VALUES('{$name}','{$email}','{$mobile}','{$city}','{$age}','{$address}','{$gender}','{$pass}','pp.jpg','{$date}')";
         
         if(mysqli_query($conn,$sql)){

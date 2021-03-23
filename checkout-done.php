@@ -11,7 +11,6 @@
     $phn = get_string($conn,$_POST['phone']);
     $payment = get_string($conn,$_POST['payment']);
     $del_charge=300;
-    
     if($payment=='cash'){
         $order_status=1;
     }
