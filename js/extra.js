@@ -1011,6 +1011,7 @@ function del_boy_log(){
     $('#del_boy_log input').css('border','1.5px solid black');
     var email = $('#del_boy_log #email').val();
     var pass=$('#del_boy_log #pass').val();
+    // alert(email+' == '+pass);
     var is_error='';
     if(email==''){
         $('#del_boy_log #email').css('border','1.5px solid red');
@@ -1029,11 +1030,15 @@ function del_boy_log(){
             type:'post',
             data:{term:type,email:email,pass:pass},
             success:function(result){
+                
                 if(result=='done'){
                     location.href='index.php';
                 }
-                if(result=='failed'){
+                else if(result=='failed'){
                     $('#del_boy_log .log_error').html('Login Information in incorrect.');
+                }
+                else if(result=='deactive'){
+                    $('#del_boy_log .log_error').html('Delivery boy is not active');
                 }
             }
         });

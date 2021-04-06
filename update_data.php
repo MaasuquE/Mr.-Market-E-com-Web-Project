@@ -539,14 +539,19 @@ if($type=='del_boy_reg'){
 if($type=='del_boy_log'){
     $email=mysqli_real_escape_string($conn,$_POST['email']);
     $pass=mysqli_real_escape_string($conn,$_POST['pass']);
-    $res=mysqli_query($conn,"SELECT * FROM delivery_boy WHERE email='{$email}' AND password='{$pass}'");
+    $res=mysqli_query($conn,"SELECT * FROM delivery_boy WHERE del_boy_email='{$email}' AND password='{$pass}'");
     if(mysqli_num_rows($res)>0){
         $row=mysqli_fetch_assoc($res);
-        $_SESSION['alert']="Login Successful as Delivery Boy";
-        $_SESSION['alert_code']="success";
-        $_SESSION['del_boy']=$row['boy_name'];
-        $_SESSION['del_boy_id']=$row['del_boy_id'];
-        echo "done";
+        if($row['del_boy_sts']!=1){
+            echo "deactive";
+        }else{
+            $_SESSION['alert']="Login Successful as Delivery Boy";
+            $_SESSION['alert_code']="success";
+            $_SESSION['del_boy']=$row['boy_name'];
+            $_SESSION['del_boy_id']=$row['del_boy_id'];
+            echo "done";
+        }
+        
     }
     else{
         echo "failed";
